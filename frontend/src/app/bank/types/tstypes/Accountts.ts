@@ -1,4 +1,4 @@
-//import { CustomerTS } from "./Customer";
+import{CustomerTS} from './Customerts';
 export class AccountTS {
     accountId?: string;
     customerId: string;

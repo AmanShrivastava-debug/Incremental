@@ -1,12 +1,12 @@
-//import { AccountTS } from "./Account";
+import{AccountTS} from './Accountts';
 export class TransactionTS {
     transactionId?: number;
     accountId: string;
-  amount: number;
-  transactionDate: Date;
-   transactionType:string;
+    amount: number;
+    transactionDate: Date;
+    transactionType: string;
 
-    constructor(accountId: string, amount: number, transactionDate: Date, transactionId?:number) {
+    constructor(accountId: string, amount: number, transactionDate: Date, transactionId?: number) {
         this.transactionId = transactionId;
         this.accountId = accountId;
         this.amount = amount;
@@ -22,5 +22,5 @@ export class TransactionTS {
     }
 }
 
-const transaction = new TransactionTS("1", 50.00, new Date(),1);
+const transaction = new TransactionTS("1", 50.00, new Date(), 1);
 transaction.displayInfo();
